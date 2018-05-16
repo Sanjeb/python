@@ -20,6 +20,8 @@ def bathroom():
         bath_tub()
     elif a == "back":
         start()
+    else:
+        print("you can't go there")
 
 
 
@@ -30,18 +32,22 @@ def upstairs():
     b = input()
     if b == "down":
         start()
+    else:
+        print("you can't go there")
 
 
 
 
 def bath_tub():
-    print("your hands are hands are covered with blood")
+    print("your hands are covered with blood")
     print("you find a body bag")
-    print("you open it and find a dead body")
+    print("you open it and find a corpse")
     print("you can go 'out' of the bathroom")
     c = input()
     if c == "out":
         start()
+    else:
+        print("you can't go there")
 
 
 def well():
@@ -65,11 +71,17 @@ def garden():
         start()
     elif d == "down":
         well()
+    else:
+        print("you can't go there")
 
 
-def start():
-    print("Welcome to detective mystery")
+def intro():
+    print ()
+    print("welcome, to Detective mystery")
+    print("your mission is to find what has")
+    print("happened here and who did it")
     print("----------------------------------------------")
+def start():
     print("you are in a house. there is blood everywhere")
     print("You can go 'up' the stairs, 'outside' to the back yard")
     print("or to the bathroom which is in the 'east' ")
@@ -80,6 +92,9 @@ def start():
         garden()
     elif test == "east":
         bathroom()
+    else:
+        print("you can't go there")
 
 
+intro()
 start()
